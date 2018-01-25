@@ -1,7 +1,7 @@
 {
   "name": "http-msgs",
-  "version": "0.0.0",
-  "description": "This contains node modules for http.responce.writeHeader values",
+  "version": "0.0.1",
+  "description": "Node module to handle to  HTTP status codes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
