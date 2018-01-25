@@ -1,0 +1,29 @@
+{
+  "name": "http-msgs",
+  "version": "0.0.0",
+  "description": "This contains node modules for http.responce.writeHeader values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umeshramya/http-msgs.git"
+  },
+  "keywords": [
+    "http",
+    "message.",
+    "writeHeader",
+    "200",
+    "301",
+    "307",
+    "308",
+    "404"
+  ],
+  "author": "Dr Umesh R Bilagi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/umeshramya/http-msgs/issues"
+  },
+  "homepage": "https://github.com/umeshramya/http-msgs#readme"
+}
