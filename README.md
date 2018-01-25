@@ -1,8 +1,8 @@
 # http-msgs
 
-![verson](https://img.shields.io/badge/version-0.0.7-green.svg)
+![verson](https://img.shields.io/badge/version-0.0.1-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)
-![under development](https://img.shields.io/badge/Under-Developement-red.svg)
+
 
 
 ## httpMsgs
