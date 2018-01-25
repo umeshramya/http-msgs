@@ -57,4 +57,4 @@ if set set to true it trigeers `res.end()`. if sets to false, call function has 
     err = this contains error message
 ```
 
-For more extensive study on  read in this link[HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+For more extensive study on  read in this link [HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
