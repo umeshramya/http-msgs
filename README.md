@@ -1,17 +1,17 @@
 # http-msgs
 Node module to handle to  HTTP status codes
 
-![verson](https://img.shields.io/badge/version-0.0.1-green.svg)
+![verson](https://img.shields.io/badge/version-0.0.2-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)
 
-This module sets the the http messages for nodes http server
+This module sets the the http messages for node's http server
 it usess `request` and `responce` arguments of`http` 
-`resEnd` argument is boolen by defulat it  is set to true
-if set set to true it trigeers `res.end()`. if sets to false call function has explicitly call `res.end()` to end responce to client application. 
+`resEnd` argument is boolen, by defulat it  is set to true
+if set set to true it trigeers `res.end()`. if sets to false, call function has explicitly call `res.end()` to end responce to client application. 
 
 ## 200 and plus
 ```
-    httpMsgs.sendJSON 1eq, res, data, resEnd)
+    httpMsgs.sendJSON(req, res, data, resEnd)
     This  send json object back  after with success 
     data = retun data is in JSON format
 ```
@@ -21,16 +21,16 @@ if set set to true it trigeers `res.end()`. if sets to false call function has e
 ```
 ## 300  plus
 ```
-    httpMsgs.movedPermently = function(req, res, url, resEnd)
+    httpMsgs.movedPermently(req, res, url, resEnd)
     moved permentantly
 ```
 ```
-    httpMsgs.redirectTemporary = function(req, res, url,  resEnd)
+    httpMsgs.redirectTemporary(req, res, url,  resEnd)
     Temporary redirect
 ```
 
 ```
-    httpMsgs.redirectPerment = function(req, res, url,  resEnd)
+    httpMsgs.redirectPerment(req, res, url,  resEnd)
     perment redirect
 ```
 
@@ -41,11 +41,11 @@ if set set to true it trigeers `res.end()`. if sets to false call function has e
 ```
     
 ```
-    httpMsags.send404= function(req, res, resEnd)
+    httpMsags.send404(req, res, resEnd)
     Requested page not availeble
 ```
 ```
-    httpMsgs.send413 = function(req, res, resEnd)
+    httpMsgs.send413 (req, res, resEnd)
     Requesting for large data, not supported.
 ```
 
@@ -56,3 +56,5 @@ if set set to true it trigeers `res.end()`. if sets to false call function has e
     This sends error status with error messages
     err = this contains error message
 ```
+
+For more extensive study on  read in this link[HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
