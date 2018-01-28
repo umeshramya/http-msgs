@@ -1,105 +1,31 @@
-let contentType ={"Content-Type" : "application/json"}
-/*
-    ==================
-        200  plus status
-    ==================
-*/
 
-exports.sendJSON = function(req, res, data, resEnd=true){
-    // on succes 
-    res.writeHead(200, contentType);
-    if(data){
-        res.write(JSON.stringify(data));
-    }
-  
-    if(resEnd){         
-        res.end();     
-    }
-     
-
-}
-
-exports.send200 = function(req, res,  resEnd=true){
-    // 200
-    res.writeHead(200, contentType);
-    if(resEnd){         
-        res.end();     
-    }
-}
-
-/*
-    ======================
-        300  plus status
-    ======================
-*/
-exports.movedPermently = function(req, res, url, resEnd=true){
-    // redirect temporary
-    res.writeHead(301,{Location: url } );  
-    if(resEnd){         
-        res.end();     
-    }
-}
-exports.redirectTemporary = function(req, res, url,  resEnd=true){
-    // redirect temporary
-    res.writeHead(301,{Location: url } ); 
-        if(resEnd){         
-            res.end();     
-        }
-}
-
-exports.redirectPerment = function(req, res, url,  resEnd=true){
-    // redirect perment
-    res.writeHead(301,{Location: url } ); 
-        if(resEnd){         
-            res.end();     
-        }
-}
+var msg200 = require("./src/200");
+var msg300 = require("./src/300");
+var msg400 = require("./src/400");
+var msg500 = require("./src/500");
+var cookie = require("./src/cookie");
 
 
-/*
-    ======================
-        400  plus status
-    ======================
-*/
+exports.sendJSON = msg200.sendJSON;
+exports.send200 = msg200.send200;
 
-exports.send404 = function(req, res,  resEnd=true){
-    // Requested page not availeble
-    res.writeHead(404,"Resource not found", contentType);
-    res.write(JSON.stringify({"data" : "Resource not found"}));
-        if(resEnd){         
-            res.end();     
-        }
-}
 
-exports.send405 = function(req, res,  resEnd=true){
-    // Method not supporetd ie. GET, POST others not supported
-    res.writeHead(405,"Method not supported", contentType);
-    res.write(JSON.stringify({"data" : "Method not supported"}));
-        if(resEnd){         
-            res.end();     
-        }
-}
+exports.movedPermently = msg300.movedPermently;
+exports.redirectTemporary = msg300.redirectTemporary;
+exports.redirectPerment = msg300.redirectPerment;
 
-exports.send413 = function(req, res,  resEnd=true){
-    // Requesting for large data, not supported
-    res.writeHead(413, "Request too large", contentType);
-    res.write(JSON.stringify({"data" : "Request too large"}));
-        if(resEnd){         
-            res.end();     
-        }
-}
 
-/*
-    ==================
-        500 status
-    ==================
-*/ 
+exports.send404 =  msg400.send404;
+exports.send405 = msg400.send405;
+exports.send413 = msg400.send413;
 
-exports.send500 = function(req, res, err,  resEnd=true){
-    // on error
-    res.writeHead(500, "Internal error occured", contentType);
-    res.write(JSON.stringify({"data" : "Internal error occured: " + err}));
-        if(resEnd){         
-            res.end();     
-        }
-}
+
+exports.send500 = msg500.send500;
+
+exports.getCookie = cookie.getCookie;
+exports.setCookie = cookie.setCookie;
+
+
+
+
+

@@ -1,7 +1,7 @@
 # http-msgs
 Node module to handle to  HTTP status codes
 
-![verson](https://img.shields.io/badge/version-0.0.2-green.svg)
+![verson](https://img.shields.io/badge/version-0.0.3-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)
 
 This module sets the the http messages for node's http server
@@ -57,4 +57,9 @@ if set set to true it trigeers `res.end()`. if sets to false, call function has 
     err = this contains error message
 ```
 
+## cookie
+```
+    httpMsgs.setCookie(req, res, cookieString, data,  resEnd=true)
+    httpMsgs.getCookie(req, res, curCookie);
+```
 For more extensive study on  read in this link [HTTP status](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
