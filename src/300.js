@@ -1,4 +1,4 @@
-let contentType ={"Content-Type" : "application/json"}
+let contentTypeJSON ={"Content-Type" : "application/json"}
 /*
 ======================
 300  plus status

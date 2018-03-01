@@ -7,6 +7,7 @@ var cookie = require("./src/cookie");
 
 
 exports.sendJSON = msg200.sendJSON;
+exports.sendHTML = msg200.sendHTML;
 exports.send200 = msg200.send200;
 
 
@@ -14,7 +15,7 @@ exports.movedPermently = msg300.movedPermently;
 exports.redirectTemporary = msg300.redirectTemporary;
 exports.redirectPerment = msg300.redirectPerment;
 
-
+exports.send403 = msg400.send403;
 exports.send404 =  msg400.send404;
 exports.send405 = msg400.send405;
 exports.send413 = msg400.send413;
