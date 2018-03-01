@@ -1,6 +1,6 @@
 {
   "name": "http-msgs",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Node module to handle to  HTTP status codes",
   "main": "index.js",
   "scripts": {
