@@ -5,7 +5,7 @@ let contentTypeJSON ={"Content-Type" : "application/json"}
 ======================
 */
 exports.movedPermently = function(req, res, url, resEnd=true){
-// redirect temporary
+// moved permently
 res.writeHead(301,{Location: url } );  
 if(resEnd){         
 res.end();     
@@ -13,7 +13,7 @@ res.end();
 }
 exports.redirectTemporary = function(req, res, url,  resEnd=true){
 // redirect temporary
-res.writeHead(301,{Location: url } ); 
+res.writeHead(307,{Location: url } ); 
 if(resEnd){         
     res.end();     
 }
@@ -21,7 +21,7 @@ if(resEnd){
 
 exports.redirectPerment = function(req, res, url,  resEnd=true){
 // redirect perment
-res.writeHead(301,{Location: url } ); 
+res.writeHead(308,{Location: url } ); 
 if(resEnd){         
     res.end();     
 }
