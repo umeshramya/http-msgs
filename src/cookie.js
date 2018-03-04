@@ -6,7 +6,7 @@
 
 var queryString = require("querystring");
 
-var setCookie = function(req, res, cookieString, data,  resEnd=false){
+var setCookie = function(req, res, cookieString, data="",  resEnd=false){
     // this sets new cookie 
     res.writeHead(200, {
         'Set-Cookie': cookieString,
