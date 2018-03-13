@@ -1,7 +1,7 @@
 # http-msgs
 Node module to handle to  HTTP status codes
 
-![verson](https://img.shields.io/badge/version-1.0.3-green.svg)
+![verson](https://img.shields.io/badge/version-1.0.4-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellowgreen.svg)
 
 This module sets the the http messages for node's http server
