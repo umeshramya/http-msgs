@@ -3,7 +3,7 @@
         This 
     ==================================
 */ 
-
+var util = require("util");
 var queryString = require("querystring");
 
 var setCookie = function(req, res, cookieString, data="",  resEnd=false){
