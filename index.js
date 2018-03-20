@@ -22,7 +22,7 @@ exports.send413 = msg400.send413;
 exports.send500 = msg500.send500;
 
 
-exports.setCookieString = cookie.setCookie;
+exports.setCookieString = cookie.setCookieString;
 exports.getCookie = cookie.getCookie;
 exports.setCookie = cookie.setCookie;
 
