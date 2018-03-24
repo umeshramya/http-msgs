@@ -1,6 +1,6 @@
 {
   "name": "http-msgs",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Node module to handle to  HTTP status codes",
   "main": "index.js",
   "scripts": {
@@ -18,12 +18,16 @@
     "301",
     "307",
     "308",
-    "404"
+    "404",
+    "secure cookie"
   ],
   "author": "Dr Umesh R Bilagi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/umeshramya/http-msgs/issues"
   },
-  "homepage": "https://github.com/umeshramya/http-msgs#readme"
+  "homepage": "https://github.com/umeshramya/http-msgs#readme",
+  "dependencies": {
+    "cookie-secure": "^1.0.2"
+  }
 }
