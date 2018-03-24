@@ -25,7 +25,7 @@ exports.send500 = msg500.send500;
 
 exports.getCookie = cookie.getCookie;
 exports.setCookie = cookie.setCookie;
-
+exports.cookieString = cookie.cookieString;
 
 
 

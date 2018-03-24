@@ -6,6 +6,12 @@
 var util = require("util");
 var queryString = require("querystring");
 
+
+var cookieString = function(req, res, name, value, expire , httponly=true ){
+    return `${name} = ${value};expire=${expire};domain=${req.headers.host};httponly=${true}`;
+}
+exports.cookieString = cookieString;
+
 var setCookie = function(req, res, cookieString, data="",  resEnd=false){
     // this sets new cookie 
     res.writeHead(200, {
