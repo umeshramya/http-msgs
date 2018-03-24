@@ -1,6 +1,6 @@
 {
   "name": "http-msgs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Node module to handle to  HTTP status codes",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/umeshramya/http-msgs#readme",
   "dependencies": {
-    "cookie-secure": "^1.0.2"
+    "cookie-secure": "^1.0.4"
   }
 }
