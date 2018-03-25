@@ -25,7 +25,7 @@ exports.sendHTML = function(req, res, html, resEnd=true){
     // on succes 
     res.writeHead(200, contentTypeHTML);
     if(html){
-        res.write(JSON.stringify(html));
+        res.write(html);
     }
   
     if(resEnd){         
